@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Background Image-->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/Foodbackgroundimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <!--Unique ID for background image-->
+    <!--Width spans full screen-->
+    <!--Height spans full screen-->
+    <!--Scales image to fill, cropping as necessary-->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Enabler!"
+        android:textColor="#FE0808"
+        android:textSize="45sp"
+        android:textSyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+    <!--Unique ID for title text-->
+    <!--text size-->
+    <!--Red text color-->
+    <!--Space below the title-->
+    <!--bold style-->
+
+    <EditText
+        android:id="@+id/MealInput"
+        android:layout_width="265dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:hint="Meal suggestion"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+    <!--Hint text-->
+
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="146dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFECA1"
+        android:text="Reset Button"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+    <!--unique ID for Reset button-->
+    <!--Button text-->
+    <!--Custom yellow tint-->
+    <!--Black text color-->
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#FFECA1"
+        android:text="Click Me!"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImage" />
+    <!--Unique ID for reset button-->
+    <!--Button text-->
+    <!--Custom yellow tint-->
+    <!--Black text color-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
